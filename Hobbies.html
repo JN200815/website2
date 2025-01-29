@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOBBIES</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1>MY WEBSITE</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h6>Welcome to the hobbies page</h6>
+        <h4>This slideshow shows my Lego models which I have made, I really like making Lego.</h4>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/911.jpg" style="width:100%">
+      <div class="text">This is the Porshe 911 lego model that I built. This was one of the hardest models that I have constructed, as some parts kept falling out, and it was very delicate too.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/bond.jpg" style="width:100%">
+      <div class="text">This is the Aston Martin DB5 from the James Bond movies. This was the hardest model that I have constructed, as it took a lot of time to built, and there were a lot of peices that had to be placed in an awkward way, so this took many attemps to make.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/falcon.jpg" style="width:100%">
+      <div class="text">This is the Millennium Falcon. This wasn't too bad to build, as this was the smaller version of the original model, however, this too took me a bit of time to build. </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/rocket.jpg" style="width:100%">
+        <div class="text">This is the NASA Space Shuttle Discovery. This again was one of the hardest models that I have made, as it took a long time and there were a lot of peices that needed to be in a very particular way.</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <p>I also like gaming which my mates, and play games such as EA FC 25, Call of Duty, Fortnite and others. I currently play on a PS5, but used to play on a Nintendo Switch, the PS is better to play on, but the switch comes in handy to play whenever I am going on holidays or when I want to play Mario Kart 😂 </p>
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/PS5.jpg">
+            <img src="images/PS5.jpg" alt="PlayStation 5">
+          </a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/switch.jpeg">
+            <img src="images/switch.jpeg" alt="Nintendo Switch">
+          </a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/cod.jpg">
+            <img src="images/cod.jpg" alt="COD">
+          </a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/cont.jpg">
+            <img src="images/cont.jpg" alt="Controller">
+          </a>
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+    </main>
+
+ 
+</body>
+<footer class="footer"> 
+  <p>@JOVAN NARWALS WEBSITE 2025 COPYRIGHT</p>
+  <div class="social-icons">
+      <a href="https://youtube.com/@the_official_jsn?si=VuJ687zwjV1DA1ML" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/in/jovan-narwal-ab04842b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/JN200815" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+      </a>
+  </div>
+</footer>
+</html>
